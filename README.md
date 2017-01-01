@@ -5,6 +5,14 @@ go-hdf5
 
 Naive ``cgo`` bindings for the ``C-API`` of ``hdf5``.
 
+## Status
+
+**FROZEN: this package is frozen. New developments should be requested to [gonum/hdf5](https://github.com/gonum/hdf5).**
+
+This package will stay as is to not break people relying on it.
+But *NO* new developments will happen.
+Requests for new features, bug fixes, etc... should be directed against [gonum/hdf5](https://github.com/gonum/hdf5) (but, do note that `gonum/hdf5` API is still in flux).
+
 **NOTE** that starting with Go >= 1.6, one needs to run with `GODEBUG=cgocheck=0` to disable the new stricter `CGo` rules.
 
 Documentation
