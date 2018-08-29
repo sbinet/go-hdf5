@@ -256,7 +256,7 @@ var (
 )
 
 //
-var h5t_VARIABLE uint64 = C.H5T_VARIABLE
+var h5t_VARIABLE uint64 = uint(C.H5T_VARIABLE)
 
 func makeGoStringDatatype() *Datatype {
 	dt, err := T_C_S1.Copy()
