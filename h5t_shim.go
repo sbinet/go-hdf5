@@ -255,8 +255,8 @@ var (
 	T_GO_STRING *Datatype = makeGoStringDatatype()
 )
 
-//
-var h5t_VARIABLE int64 = C.H5T_VARIABLE
+// the only version portable way to do this...<1.11 complains if this is uint64 and >=1.11 complains if it's int64
+var h5t_VARIABLE uint64 = ^uint64(0)
 
 func makeGoStringDatatype() *Datatype {
 	dt, err := T_C_S1.Copy()
